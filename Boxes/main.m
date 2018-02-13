@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Box.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        Box *box = [[Box alloc] initWithHeight:5 withWidth:5 withLength:5];
+        [box volume];
+        Box *box2 = [[Box alloc] initWithHeight:6 withWidth:6 withLength:6];
+        [box howManyBoxes:box2];
     }
     return 0;
 }
